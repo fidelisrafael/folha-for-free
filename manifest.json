@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Folha Subscription Killer",
+  "description": "Quer ler as notícias da Folha na faixa ? Use essa extensão!",
+  "version": "0.1",
+  "author": "Rafael Fidelis <rafa_fidelis@yahoo.com.br>",
+  "permissions": [],
+  
+  "icons": { 
+    "16": "icon_16.png",
+    "46": "icon_46.png",
+    "96": "icon_96.png",
+    "112": "icon_112.png",
+    "128": "icon_128.png",
+    "256": "icon_256.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
