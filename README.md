@@ -10,6 +10,8 @@ Pack the extension using Chrome's tool in "Settings -> Tools -> Extensions" (_en
 ## TODO
  - Tests
  - Safari Extension
+ - Firefox Extension
+ - Opera Extension
  - Use manifest.json to match folha URL(..)
 
 ## License
