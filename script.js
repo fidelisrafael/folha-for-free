@@ -12,12 +12,12 @@
 			},
 			init: function () {
 				var self 		= this ;
-				this.wrapper 	= document.querySelector("body > div");
+				this.wrapper 	= document.querySelector("body > span");
 				if(this.wrapper != null) {
 					this.walk(this.wrapper, function() {
 						this.style.display = 'none';
 					});
-					this.setBodyCSS();
+					this.removeBodyStyle();
 					return true;
 				};
 				return false;
@@ -32,12 +32,8 @@
 				applyCallback.call(element,element);
 			},
 			// override folha CSS, man
-			setBodyCSS: function() {
-				var style 			= 'body {overflow:auto !important;width:100% !important;margin:1px !important}</style>',
-					styleElement 	= document.createElement('style');
-
-				styleElement.innerText = style;
-				document.querySelector('head').appendChild(styleElement);
+			removeBodyStyle: function() {
+				document.querySelector('body').removeAttribute('style');
 			}
 		};
 
