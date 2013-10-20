@@ -6,6 +6,8 @@ Simple Chrome's extension to read [folha.com.br](http://folha.com.br) articles f
 ## Install
 
 Pack the extension using Chrome's tool in "Settings -> Tools -> Extensions" (_enable developer mode to enable "Load unpacked extesion" buttom_)
+or download the [Extension on Dropbpx](https://www.dropbox.com/s/kmpq7bleicjvn9a/folha-for-free.crx) , and visit `chrome://extensions` and drang and drop the file `folha-for-free.crx` to install the extension.
+
 
 ## TODO
  - Tests
